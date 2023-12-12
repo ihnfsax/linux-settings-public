@@ -70,7 +70,7 @@ export GITEDITOR="/usr/bin/vim"
 alias tree2="tree -aI '.git' -L 2 ."
 alias tree3="tree -aI '.git' -L 3 ."
 alias ll="ls -alhF"
-# alias ll="eza -aalgFhb --icons"
+# alias ll="eza --icons -aalgFhb"
 alias nv="nvim"
 alias tmux="tmux -u"
 
