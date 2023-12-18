@@ -28,7 +28,7 @@ colors
 setopt PROMPT_SUBST
 # PROMPT
 my_prompt() {
-    echo -n "%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%(!.%1~.%~)"
+    echo -n "%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%(!.%1~.%~) %F{red}%(?..%? )"
     #     echo -n "%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%(!.%1~.%~) $(git_super_status)" # For git prompt
     echo -n "\n"
     echo -n "%F{blue}%(!.#.$)%k%b%f "
