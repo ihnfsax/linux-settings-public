@@ -45,20 +45,25 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
 # Proxy
+export theproxy=
 unsetproxy() {
-    unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY
+    unset http_proxy https_proxy all_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY
 }
 setproxy() {
-    export http_proxy=
-    export https_proxy=
-    export HTTP_PROXY=
-    export HTTPS_PROXY=
+    export http_proxy=${theproxy}
+    export https_proxy=${theproxy}
+    export all_proxy=${theproxy}
+    export HTTP_PROXY=${theproxy}
+    export HTTPS_PROXY=${theproxy}
+    export ALL_PROXY=${theproxy}
 }
 echoproxy() {
     echo "http_proxy=${http_proxy}"
     echo "https_proxy=${https_proxy}"
+    echo "all_proxy=${all_proxy}"
     echo "HTTP_PROXY=${HTTP_PROXY}"
     echo "HTTPS_PROXY=${HTTPS_PROXY}"
+    echo "ALL_PROXY=${ALL_PROXY}"
 }
 setproxy
 
